@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculador de Período de Concessão de Férias</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="pag.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="esquerda">
+        <h1>
+          CALCULADOR DE<br />
+          PERÍODO DE CONCESSÃO<br />
+          DE FÉRIAS
+        </h1>
+        <br />
+        <ol>
+          <li>Informe a data de admissão no formato DD/MM/AAAA;</li>
+          <br />
+          <li>
+            Selecione umas das opções: Alterar Programação ou Nova Programação;
+          </li>
+          <br />
+          <li>Clique no botão CALCULAR.</li>
+        </ol>
+        <footer>Desenvolvido por Alexandre Goulart Lopes</footer>
+      </div>
+      <div class="direita">
+        <div class="card">
+          <label for="data"><h1>Informe a data de admissão:</h1></label>
+          <input type="text" id="data" placeholder="DD/MM/AAAA" />
+          <select id="selecionar" class="saida">
+            <option value="alterar">Alterar Programação</option>
+            <option value="nova">Nova Programação</option>
+          </select>
+          <br />
+          <br /><br />
+
+          <button onclick="calculo()">Calcular</button><br /><br />
+          <label><h1>Seu período de concessão é:</h1></label><br />
+          <input
+            type="text"
+            id="inicio"
+            class="saida"
+            placeholder="Data de início"
+          />
+          <input type="text" id="fim" class="saida" placeholder="Data final" />
+          <br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
